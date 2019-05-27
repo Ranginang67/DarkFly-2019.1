@@ -7,12 +7,6 @@ add your favorite github users and download repository via DarkFly-2019.1, add m
 **Screenshoot**
 
 ![1](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/1.png)
-![2](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/2.png)
-![3](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/3.png)
-![4](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/4.png)
-![5](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/100.png)
-![6](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/6.png)
-![7](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/7.png)
 
 
 INDONESIA:<br>
