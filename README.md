@@ -13,7 +13,7 @@ tambahkan pengguna github kesukaan kalian kedalam tools DarkFly-2019.1 dan Temuk
 ![1](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/1.png)
 
 
-**install on Linux (as superuser)**
+* **install on Linux (as superuser)**
 
 ```
 #apt-get install git
@@ -24,7 +24,7 @@ tambahkan pengguna github kesukaan kalian kedalam tools DarkFly-2019.1 dan Temuk
 #DarkFly.
 ```
 
-**install on Termux android**
+* **install on Termux android**
 
 ```
 $pkg install git python -y
