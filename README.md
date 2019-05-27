@@ -6,7 +6,7 @@ add your favorite github users and download repository via DarkFly-2019.1, add m
 
 **Screenshoot**
 
-<img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/1.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/2.png" width="30%" height="20%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/3.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/4.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/5.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/6.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/7.png" width="30%">
+<img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/1.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/2.png" width="30%" height="15%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/3.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/4.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/5.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/6.png" width="30%"><img src="https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/7.png" width="30%">
 
 
 INDONESIA:<br>
