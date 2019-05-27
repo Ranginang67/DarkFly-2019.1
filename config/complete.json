@@ -1,0 +1,8 @@
+{
+    "pyfiles":[
+        "config/md.py"
+    ],
+    "jsonfiles":[
+        "config/tools.json"
+    ]
+}
