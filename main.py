@@ -111,7 +111,10 @@ class MainModule:
         with open(cls.__tools_list,"r+") as ch:
             jsonRead = json.loads(ch.read())
             for us in jsonRead:
-                cls.getTools("Updating tools from",us)
+                try:
+                    cls.getTools("Updating tools from",us)
+                except KeyboardInterrupt:
+                    sys.exit(0)
         md.Show().Message("OK","Done!"); sleep(1.5)
         MainModule().exec()
 
