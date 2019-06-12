@@ -8,7 +8,7 @@
     Email               : ambari.developer@gmail.com
     YouTube             : Ms.ambari
     Github              : /Ranginang67
-    Termux Tested on    : Samsung galaxy J5 prime 9.0
+    Termux Tested on    : Samsung galaxy J5 prime 8.0
     Linux Tested on     : Ubuntu Gnome 16.04 LTS
 
     ------------
