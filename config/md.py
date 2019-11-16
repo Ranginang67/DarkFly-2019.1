@@ -10,11 +10,11 @@ class SetModule:
     
     tools_menu = {
         "Home":{
-            1:"Show my tools",
-            2:"Upate Repository tools",
-            3:"Add new Repository",
-            4:"Remove Repository",
-            5:"Uninstall",
+            1:"Display Repository",
+            2:"Upate Repository",
+            3:"Add new github users",
+            4:"Remove github users",
+            5:"Uninstall tools",
             6:"About",
             7:"Exit",
         }
@@ -31,7 +31,7 @@ class SetModule:
                         Show().Message("e","File '{}' Not found...".format(i))
                         status_complete = 1
         if status_complete != 0:
-            Show().Message("e","{} File not found detected. reinstall this tool to fix this broblem".format(status_complete))
+            Show().Message("e","{} File not found detected. reinstall to fix this broblem".format(status_complete))
             return 0
 
         return 1
