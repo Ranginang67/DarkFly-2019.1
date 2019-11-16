@@ -1,7 +1,7 @@
 # DarkFly-2019.1
 
 DarkFly-2019.1 generation of DarkFly-tools, this tools is a super power, open source, fast, and automatic tools
-add your favorite github users and download repository via DarkFly-2019.1, add more github users and find another tools from DarkFly-2019.1
+add your favorite github users and download repository via DarkFly-2019.1, add more github users and find another tools via DarkFly-2019.1
 
 
 INDONESIA:<br>
