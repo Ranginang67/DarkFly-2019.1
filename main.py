@@ -112,7 +112,7 @@ class MainModule:
             jsonRead = json.loads(ch.read())
             for us in jsonRead:
                 try:
-                    cls.getTools("Updating tools from",us)
+                    cls.getTools("Updating Repository from",us)
                 except KeyboardInterrupt:
                     sys.exit(0)
         md.Show().Message("OK","Done!"); sleep(1.5)
@@ -124,30 +124,30 @@ class MainModule:
         #     sys.exit(md.Show().Message("e","Install failed, check your connection."))
         MainModule().sysMain(["clear","printf \"\a\""])
         if os.path.isdir("{}/{}".format(MainModule.__home_directory,toolsName)):
-            md.Show().Message("e","Install Failed, tools '{}' exists".format(toolsName)); sleep(2)
+            md.Show().Message("e","Download Failed, tools '{}' exists".format(toolsName)); sleep(2)
             MainModule().exec()
             return 0
-        md.Show().Message("normal","Installing tools{}: {}".format("".rjust(1),toolsName))
+        md.Show().Message("normal","Downloading repo{}: {}".format("".rjust(1),toolsName))
         md.Show().Message("normal","From{}: {}".format("".rjust(13),usersName))
         MainModule().sysMain(["git clone -q {}/{} {}/{}".format(toolsUrl,toolsName,MainModule.__home_directory,toolsName)])
 
         if not os.path.isdir("{}/{}".format(MainModule.__home_directory,toolsName)):
-            md.Show().Message("e","Install failed")
+            md.Show().Message("e","Download failed")
             return 0
 
-        md.Show().Message("OK","Install success")
+        md.Show().Message("OK","Download success")
         md.Show().keyExceptions();
 
     @staticmethod
     def addRepository(repoUrl=None):
         if not MainModule().networkCheck():
-            md.Show().Message("e","Failed to add new repository, Please check your connection and try again\n")
+            md.Show().Message("e","Failed to adding new users, Please check your connection and try again\n")
             sys.exit(0)
         MainModule().sysMain(["clear","printf \"\a\""])
         if not repoUrl:
             try:
                 while True:
-                    repoUrl = str(input(md.Show().Message("i","Input new repository [ EX: https://github.com/users ]: ")))
+                    repoUrl = str(input(md.Show().Message("i","Input new github users [ EX: https://github.com/users ]: ")))
                     if repoUrl[0:19] != "https://github.com/":
                         md.Show().Message("e","Error: Invalid URL")
                         continue
@@ -172,7 +172,7 @@ class MainModule:
                 data = json.loads(addR.read())
                 
                 if repoUrl in data:
-                    md.Show().Message("e","Github '"+repoUrl+"' exists")
+                    md.Show().Message("e","Github users '"+repoUrl+"' exists")
                     return 0
                 data[repoUrl] = {"name":"0","tools":[]}
 
@@ -183,11 +183,11 @@ class MainModule:
                 try:
                     json.loads(open(MainModule.__tools_list,"r+").read())[repoUrl]
                 except KeyError:
-                    md.Show().Message("e","Failed to add new repository.")
+                    md.Show().Message("e","Failed to adding github users.")
                     sys.exit(0)
-                md.Show().Message("ok","add Repository Success")
+                md.Show().Message("ok","github user Successfully added")
                 
-                MainModule().getTools("Fetching tools from",repoUrl)
+                MainModule().getTools("Fetching repository from",repoUrl)
                 md.Show().Message("OK","Done!"); sleep(1.5)
                 MainModule().exec()
         except KeyboardInterrupt:
@@ -242,7 +242,7 @@ class MainModule:
             getName = json.loads((open(cls.__tools_list,"r+").read()))[cls.__users_tmp[users_repository_selection]]["name"]
 
         MainModule().sysMain(["clear","printf \"\a\""])
-        md.Show().Message("normal","Tools from: {}\n".format(getName))
+        md.Show().Message("normal","Repository from: {}\n".format(getName))
 
         for addItems in myItems:
             cls.__tools_tmp[cls.__users_tmp[users_repository_selection]].append({list(cls.__tools_tmp[cls.__users_tmp[users_repository_selection]][-1])[0]+1:addItems})
@@ -255,7 +255,7 @@ class MainModule:
                 displayItems[cc+1]
             ))
         try:
-            ts_select = int(input(md.Show().Message("i","Install from '{}' : ".format(getName))))
+            ts_select = int(input(md.Show().Message("i","Download from '{}' : ".format(getName))))
         except KeyboardInterrupt:
             md.Show().keyExceptions()
             return 0
@@ -296,7 +296,7 @@ class MainModule:
                         vd
                     ))
                 try:
-                    whatDel = int(input(md.Show().Message("i","Select repository you want to delete: ")))
+                    whatDel = int(input(md.Show().Message("i","Select github users you want to delete: ")))
                 except ValueError:
                     md.Show().Message("e","Type must be integer.")
                     sleep(1)
@@ -314,7 +314,7 @@ class MainModule:
                 delrep.write(json.dumps(ed))
                 delrep.truncate()
 
-                md.Show().Message("OK","Repository '{}' removed.".format(cls.__dell_tmp[whatDel]))
+                md.Show().Message("OK","Users '{}' removed.".format(cls.__dell_tmp[whatDel]))
                 sleep(1.5)
                 MainModule().exec()
                 break
