@@ -10,7 +10,7 @@ tambahkan pengguna github kesukaan kalian kedalam tools DarkFly-2019.1 dan Temuk
 
 # Screenshoot
 
-![1](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/1.png)
+![1](https://github.com/Ranginang67/DarkFly-2019.1/blob/master/example/ex.png)
 
 
 * **install on Linux (as superuser)**
